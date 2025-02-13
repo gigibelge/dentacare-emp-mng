@@ -1,5 +1,6 @@
 import com.dentacare.entities.Employee;
 import com.dentacare.entities.Project;
+import com.dentacare.entities.Service;
 
 import java.time.LocalDate;
 
@@ -28,10 +29,12 @@ public class Main {
         employee1.setSpecialisation_medicale("aucune");
         employee1.setId_service(0);
 
+        Service service1=new Service(1,"Développeur Java","Analyse et développement",1);
 
         System.out.println(project1);
         System.out.println(project2);
         System.out.println(employee1);
+        System.out.println(service1);
 
     }
 }
