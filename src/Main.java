@@ -1,3 +1,4 @@
+import com.dentacare.entities.Employee;
 import com.dentacare.entities.Project;
 
 import java.time.LocalDate;
@@ -16,8 +17,21 @@ public class Main {
 
         Project project2=new Project("Analyse",2,"Analyse projet DentaCare",LocalDate.of(2025,1,30),LocalDate.of(2025,5,30));
 
+        Employee employee1=new Employee();
+        employee1.setId_employe(1);
+        employee1.setNom_complet("Macquenhem Ghislain");
+        employee1.setDate_naissance(LocalDate.of(1985, 2, 14));
+        employee1.setTelephone("0473521127");
+        employee1.setEmail("ghislain.macquenhem@fonds.be");
+        employee1.setPoste("Assistant dentaire");
+        employee1.setDate_embauche(LocalDate.of(2024, 3, 15));
+        employee1.setSpecialisation_medicale("aucune");
+        employee1.setId_service(0);
+
+
         System.out.println(project1);
         System.out.println(project2);
+        System.out.println(employee1);
 
     }
 }
